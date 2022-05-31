@@ -1,23 +1,85 @@
+/* ----- Main CSS ----- */
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #304352;
+}
+
+header {
+  position: relative;
+  height: 8rem;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+header h2 {
+  color: white;
+  -webkit-text-stroke: 0.5px #555;
+}
+
+body {
+  min-height: 100vh;
+  background-color: transparent;
+  background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+
+}
+
 .title {
-  text-align: center; 
-  background-color: gainsboro;
+  text-align: center;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
   padding: 0.5rem;
   margin-top: 1rem;
   box-shadow: gray 5px 5px;
 }
 
+.temperature {
+  background-image: url(/images/mountains.jpg);
+  /* box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  padding-top: 5rem;
+}
+
 .box {
-    background: white;
-    padding: 3.75rem 2.5rem;
-    overflow: hidden;
-    color: font-color;
-    border-radius: 0.25rem;
-    box-shadow: gray 5px 5px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 3.75rem 2.5rem;
+  overflow: hidden;
+  color: font-color;
+  border-radius: 0.25rem;
+  box-shadow: gray 5px 5px;
 }
 
 .touch {
-    border-top: solid 0.3125rem;
-    z-index: 2;
+  border-top: solid 0.3125rem;
+  z-index: 2;
+}
+
+.blur-box {
+  margin: 20px;
+  background-color:#555;
+  box-shadow:0 0 5px 10px #555;
+}
+
+.blur-box-top {
+  margin: 10px;
+  background-color:#555;
+  box-shadow:0 0 5px 10px #555;
 }
 
 img.icon {
@@ -25,9 +87,15 @@ img.icon {
   width: 3.75rem;
 }
 
+footer {
+  color: #d7d2cc;
+}
+
+/* ----- Blue Button ----- */
+
 .btn {
   border: 2px solid black;
-  background-color: white;
+  background-color: #d7d2cc;
   color: black;
   padding: 10px 20px;
   font-size: 16px;
@@ -35,7 +103,6 @@ img.icon {
   border-radius: 5px;
 }
 
-/* Blue */
 .info {
   border-color: #2196F3;
   color: dodgerblue;
@@ -45,3 +112,28 @@ img.icon {
   background: #2196F3;
   color: white;
 }
+
+/* ----- Round Slider ----- */
+
+#slider .rs-range-color  {
+  background: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 1) 0%, rgba(48, 7, 36, 1) 34%, rgba(255, 255, 255, 1) 66%, rgba(0, 0, 0, 1) 100%);
+}
+#slider .rs-path-color  {
+  background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 1) 0%, rgba(169, 173, 174, 1) 34%, rgba(255, 255, 255, 1) 66%, rgba(5, 0, 0, 1) 100%);
+}
+#slider .rs-handle  {
+  background: radial-gradient(ellipse at center, rgba(228, 228, 228, 1) 0%, rgba(179, 179, 179, 1) 34%, rgb(102, 91, 98) 100%);
+}
+#slider .rs-border  {
+  border-color: white;
+}
+
+/* ----- Responsive Breakpoints ----- */
+
+/* @media screen and (max-width: 500px){
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, .lead, a {
+    font-size: 5vw;
+  }
+
+} */

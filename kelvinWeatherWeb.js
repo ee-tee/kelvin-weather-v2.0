@@ -15,4 +15,33 @@ function temperatureConverter(valNum) {
     // From Kelvin to Newton
     document.getElementById("outputNewton").innerHTML=((valNum-273.15)*33/100).toFixed(2);
 
+    sliderOutput(valNum);
+
+}
+
+/* Round Slider */
+
+// Call the roundSlider
+$("#slider").roundSlider({
+    min: -500,
+    max: 500,
+    step: 1,
+    radius: 120,
+    width: 30,
+    handleSize: "+0",
+    sliderType: "min-range",
+    value: 0
+});
+
+// Get value from roundSlider
+function sliderInput() {
+    let sliderObjValue = $("#slider").data("roundSlider").getValue();
+    document.getElementById("inputKelvin").value = sliderObjValue;
+    temperatureConverter(sliderObjValue);
+}
+
+// Return value to roundSlider
+function sliderOutput(value) {
+    let sliderObj = $("#slider").data("roundSlider");
+    sliderObj.setValue(value);
 }
