@@ -46,7 +46,7 @@ body {
 }
 
 .temperature {
-  background-image: url(/images/mountains.jpg);
+  /* background-image: url(/images/mountains.jpg); */
   /* box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;  */
   background-size: cover;
   background-repeat: no-repeat;
