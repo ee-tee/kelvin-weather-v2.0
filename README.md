@@ -23,6 +23,7 @@ Changes: <br>
 <br>
 <hr>
 <br>
+<p><b>© 2022 - Web Project Series developed by ee-tee</b></p>
 <p>Browser Version: <a href="https://ee-tee.github.io/kelvin-weather-v2.0/">https://ee-tee.github.io/kelvin-weather-v2.0/</a></p>
 <p>(kelvinWeatherWeb.js)</p>
 <p><img src="KelvinWeather2.0(BrowserVersion).png" width="500" height="auto"></p>
